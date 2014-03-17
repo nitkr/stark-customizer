@@ -14,6 +14,7 @@ function test() {
 ```require_once('stark-customizer.php');```
 
 ## Usage
+## The second largest heading (an <h2> tag)
 
 Add function ```stark_customize``` to ```functions.php```, and update your function.
 
