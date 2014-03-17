@@ -4,7 +4,7 @@ Place stark-customizer folder in your WordPress theme folder /wp-content/your-th
 
 Open your WordPress themes functions.php file /wp-content/your-theme/functions.php and add the following code:
 
-// Register Custom Navigation Walker
+// Include Stark Customizer
 require_once('stark-customizer.php');
 
 Usage
