@@ -41,6 +41,14 @@ class Stark_Customizer_Settings {
 			
 				break;
 
+				case 'customize_control':
+
+					foreach( $value as $id => $real_val ) {
+						$wp_customize->add_control( new WP_Customize_Control( $wp_customize, $id, $real_val ) );
+				}
+			
+				break;
+
 				case 'customize_color_control':
 					foreach( $value as $id => $real_val ) {
 						$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, $id, $real_val ) );
@@ -52,6 +60,14 @@ class Stark_Customizer_Settings {
 				case 'customize_image_control':
 					foreach( $value as $id => $real_val ) {
 						$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, $id, $real_val ) );
+
+				}
+
+				break;
+
+				case 'customize_upload_control':
+					foreach( $value as $id => $real_val ) {
+						$wp_customize->add_control( new WP_Customize_Upload_Control( $wp_customize, $id, $real_val ) );
 
 				}
 
